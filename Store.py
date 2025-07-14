@@ -22,7 +22,7 @@ for i in range(number):
                     break
         else:
             print("La talla ingresada no es valida")
-    products[Pcode] = {"name": name, "category": category, "price": price, "stock": stock}
+    products[Pcode] = {"name": name, "category": category, "price": price, "stock": stock, "size": size}
     cont = cont + 1
 def Menu():
     print("Venta de Ropa")
@@ -42,7 +42,17 @@ while allow == False:
             for code,value in products.items():
                 print(f"Nombre:{value['name']} codigo: {code}")
         case 2:
-            print("Buscar")
+            look = input("Ingrese el código del producto que desea encontrar: ")
+            if look in products:
+                print("Se a encontrado el producto")
+                print("")
+                print(f"Nombre: {products[look]['name']} ")
+                print(f"Precio:Q{products[look]['price']}")
+                print(f"Stock: {products[look]['stock']}")
+                print(f"Categoría: {products[look]['category']}")
+                print(f"Talla: {products[look]['size']}")
+            else:
+                print("No se a encontrado el producto")
         case 3:
             print("Precio")
         case 4:
