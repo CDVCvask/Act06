@@ -3,9 +3,9 @@ cont = 0
 number = int(input("Ingrese cuantos productos desea ingresar: "))
 for i in range(number):
     allow = False
-    print(f"{number}")
+    print(f"Prenda {cont+1}:")
     while allow == False:
-        Pcode = (f"P + {cont}")
+        Pcode = (f"P{cont}")
         name = input("Ingrese el nombre del producto: ")
         category = input("Ingrese el categoria del producto: ")
         size = input("Ingrese la talla del producto: ")
