@@ -19,6 +19,6 @@ for i in range(number):
                     print("La cantidad ingresada no es valida")
                 else:
                     Allow = True
-
         else:
             print("La talla ingresada no es valida")
+    products[Pcode] = {"name": name, "category": category, "price": price, "stock": stock}
