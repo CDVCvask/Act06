@@ -47,7 +47,7 @@ while allow == False:
                 print("Se a encontrado el producto")
                 print("")
                 print(f"Nombre: {products[look]['name']} ")
-                print(f"Precio:Q{products[look]['price']}")
+                print(f"Precio:Q.{products[look]['price']}")
                 print(f"Stock: {products[look]['stock']}")
                 print(f"Categoría: {products[look]['category']}")
                 print(f"Talla: {products[look]['size']}")
