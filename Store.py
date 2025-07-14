@@ -54,7 +54,10 @@ while allow == False:
             else:
                 print("No se a encontrado el producto")
         case 3:
-            print("Precio")
+            total = 0
+            for code,value in products.items():
+                total = total + (value['price'] * value['stock'])
+            print(f"Precio total de todo el inventario:Q.{total} ")
         case 4:
             print("Mostrar ")
         case 5:
