@@ -22,3 +22,32 @@ for i in range(number):
         else:
             print("La talla ingresada no es valida")
     products[Pcode] = {"name": name, "category": category, "price": price, "stock": stock}
+    cont = cont + 1
+allow = False
+while allow == False:
+    Menu()
+    opt = int(input("Ingrese la opción que desee: "))
+    match opt:
+        case 1:
+            print("Información de todos los productos: ")
+            print(" ")
+            for code,value in products.items():
+
+        case 2:
+            print("Buscar")
+        case 3:
+            print("Precio")
+        case 4:
+            print("Mostrar ")
+        case 5:
+            print("Gracias por usar el pograma")
+            break
+        case _:
+            print("La opción seleccionada no es valida")
+def Menu():
+    print("Venta de Ropa")
+    print("1.Mostar la lista completa de productos")
+    print("2.Buscar detalles de un producto")
+    print("3.Valor total del inventario")
+    print("4.Mostrar cuantos productos hay por categoría")
+    print("5.Salir del programa")
