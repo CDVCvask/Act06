@@ -59,7 +59,17 @@ while allow == False:
                 total = total + (value['price'] * value['stock'])
             print(f"Precio total de todo el inventario:Q.{total} ")
         case 4:
-            print("Mostrar ")
+            counting = {}
+            cont1 = 0
+            for code,value in products.items():
+                category = value['category']
+                if category in counting:
+                    counting[category] = counting[category] + 1
+                else:
+                    counting[category] = 1
+            print("En el inventario hay: ")
+            for code,value in counting.items():
+                print(f"Categoría: {code} cantidad: {value} ")
         case 5:
             print("Gracias por usar el pograma")
             break
